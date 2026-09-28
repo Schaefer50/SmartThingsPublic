@@ -2,10 +2,10 @@
 
 Copy and paste these fields into **Shop Manager → Listings → Add a listing**.
 
-## Title (137/140 characters)
+## Title (139/140 characters)
 
 ```
-Undated Life & Budget Planner Printable, Monthly Budget, Habit Tracker, Savings Challenge, Meal Planner, Digital Planner PDF, Letter & A4
+Undated Life & Budget Planner Printable, Monthly Budget, Habit Tracker, Savings Challenge, Meal Planner, Digital Planner PDF, Letter and A4
 ```
 
 ## Listing settings
