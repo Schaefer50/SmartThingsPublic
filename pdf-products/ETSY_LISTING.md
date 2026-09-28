@@ -13,7 +13,7 @@ Undated Life & Budget Planner Printable, Monthly Budget, Habit Tracker, Savings 
 | Field | Value |
 |---|---|
 | Type | **Digital** (instant download) |
-| Who made it | I did |
+| How is it produced | **Designed by** Tucker Technologies |
 | What is it | A finished product |
 | Category | Paper & Party Supplies → Paper → Calendars & Planners |
 | Price | **$4.99–$7.99** to start (see pricing notes below) |
@@ -66,6 +66,7 @@ HOW TO USE
 
 PLEASE NOTE
 • This is a digital product. Colors may vary slightly between screens and printers.
+• Designed by Tucker Technologies with the help of digital design tools, including AI.
 • For personal use only. Please do not resell or share the files.
 • Due to the nature of digital items, refunds are not available. If you have a problem with your files, message me and I'll help straight away!
 ```
