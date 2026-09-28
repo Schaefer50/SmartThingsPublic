@@ -22,7 +22,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "output")
 
 PRODUCT = "Undated Life & Budget Planner"
-SHOP = "Your Shop Name"  # change to your Etsy shop name
+SHOP = "Tucker Technologies"
 
 THEMES = {
     "sage": {"accent": "#7D9A83", "soft": "#E6EDE7", "ink": "#3E4A42", "line": "#C9D3CB"},
