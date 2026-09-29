@@ -39,9 +39,11 @@ MARGIN = 40
 
 
 class Planner:
-    def __init__(self, path, size, theme):
-        self.c = canvas.Canvas(path, pagesize=size)
-        self.c.setTitle(PRODUCT)
+    def __init__(self, path, size, theme, product=PRODUCT, canv=None):
+        """Draw to a new PDF at `path`, or onto an existing canvas `canv`."""
+        self.product = product
+        self.c = canv or canvas.Canvas(path, pagesize=size)
+        self.c.setTitle(product)
         self.c.setAuthor(SHOP)
         self.w, self.h = size
         self.t = {k: HexColor(v) for k, v in theme.items()}
@@ -143,7 +145,7 @@ class Planner:
         c = self.c
         c.setFont("Sans", 7)
         c.setFillColor(self.t["line"])
-        c.drawCentredString(self.w / 2, 18, f"{PRODUCT}  ·  {SHOP}  ·  For personal use only")
+        c.drawCentredString(self.w / 2, 18, f"{self.product}  ·  {SHOP}  ·  For personal use only")
 
     @property
     def inner(self):
