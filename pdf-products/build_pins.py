@@ -27,6 +27,10 @@ GUIDE_DESC = ("New to budgeting? This 27-page beginner's guide walks you through
               "from knowing your numbers to paying off debt, with a real worked example and "
               "10 printable worksheets. Instant PDF download, US Letter + A4.")
 
+BUNDLE_DESC = ("The Budget Starter Bundle: a 27-page beginner's budgeting guide with 10 worksheets plus "
+               "a 17-page undated life & budget planner, in a matching sage design. Learn how to budget, "
+               "then track it every month. Save 15%. Instant PDF download, US Letter + A4.")
+
 # (slug, pdf, theme, etsy listing id, board, [(headline, subline, pages)], description, keywords)
 PRODUCTS = [
     ("planner-sage", "Life-Budget-Planner_sage_LETTER.pdf", "sage", 4584031029, "Printable Planners",
@@ -45,6 +49,12 @@ PRODUCTS = [
      [("How to Budget for Beginners", "8 simple steps + 10 worksheets", [0, 7, 18]),
       ("Build Your First Budget", "A step-by-step guide with real numbers", [7, 15, 19])],
      GUIDE_DESC, "budgeting for beginners, how to budget, budget guide, 50 30 20 budget, money tips"),
+    ("budget-bundle", "Beginners-Budget-Guide_sage_LETTER.pdf", "sage", 4585598204, "Budgeting Tips",
+     [("Budget Starter Bundle", "Guide + planner · save 15%",
+       [0, ("Life-Budget-Planner_sage_LETTER.pdf", 0), 7]),
+      ("Learn · Plan · Save", "Beginner's guide + life planner",
+       [("Life-Budget-Planner_sage_LETTER.pdf", 8), 0, 18])],
+     BUNDLE_DESC, "budget bundle, budget planner, budgeting for beginners, printable planner, money tips"),
 ]
 
 
@@ -86,7 +96,9 @@ def make_pin(doc, theme, headline, subline, pages, path):
     # fanned pages
     front, mid, back = pages
     for i, x, top, h in ((back, 390, 520, 740), (mid, 240, 560, 780), (front, 60, 600, 820)):
-        im = page_img(doc, i, h)
+        # a page is an index into this product's PDF, or (other PDF, index) for bundles
+        src, idx = (pymupdf.open(os.path.join(OUT, i[0])), i[1]) if isinstance(i, tuple) else (doc, i)
+        im = page_img(src, idx, h)
         bg.paste(Image.new("RGB", im.size, t["line"]), (x + 10, top + 10))
         bg.paste(im, (x, top))
     # footer
