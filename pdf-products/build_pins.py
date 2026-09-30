@@ -31,6 +31,10 @@ BUNDLE_DESC = ("The Budget Starter Bundle: a 27-page beginner's budgeting guide 
                "a 17-page undated life & budget planner, in a matching sage design. Learn how to budget, "
                "then track it every month. Save 15%. Instant PDF download, US Letter + A4.")
 
+DATED_DESC = ("Fully dated 2027 planner with clickable month tabs: year at a glance, monthly calendars, "
+              "weekly pages for every week, monthly budgets and habit trackers. 98 pages, Sunday or "
+              "Monday start, US Letter + A4. Print at home or use in GoodNotes.")
+
 # (slug, pdf, theme, etsy listing id, board, [(headline, subline, pages)], description, keywords)
 PRODUCTS = [
     ("planner-sage", "Life-Budget-Planner_sage_LETTER.pdf", "sage", 4584031029, "Printable Planners",
@@ -55,6 +59,10 @@ PRODUCTS = [
       ("Learn · Plan · Save", "Beginner's guide + life planner",
        [("Life-Budget-Planner_sage_LETTER.pdf", 8), 0, 18])],
      BUNDLE_DESC, "budget bundle, budget planner, budgeting for beginners, printable planner, money tips"),
+    ("planner-2027", "2027-Planner_sage_LETTER_Sunday-start.pdf", "sage", 4585604514, "Printable Planners",
+     [("2027 Planner", "Dated · hyperlinked · 98 pages", [0, 7, 10]),
+      ("Plan Your Best Year Yet", "Monthly, weekly & budget pages", [2, 7, 10])],
+     DATED_DESC, "2027 planner, digital planner, goodnotes planner, dated planner, weekly planner"),
 ]
 
 

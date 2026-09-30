@@ -69,6 +69,11 @@ class Planner:
             c.setStrokeColor(t["line"])
             c.setLineWidth(0.7)
             c.line(x, self.h - MARGIN - 22, self.w - MARGIN, self.h - MARGIN - 22)
+            # dated planners pre-fill the field (e.g. the month name)
+            if getattr(self, "fill_text", None):
+                c.setFont("Serif", 12)
+                c.setFillColor(t["ink"])
+                c.drawString(x + 6, self.h - MARGIN - 19, self.fill_text)
         return self.h - MARGIN - 52
 
     def label(self, x, y, text, color=None):
