@@ -63,6 +63,12 @@ PRODUCTS = [
      [("2027 Planner", "Dated · hyperlinked · 98 pages", [0, 7, 10]),
       ("Plan Your Best Year Yet", "Monthly, weekly & budget pages", [2, 7, 10])],
      DATED_DESC, "2027 planner, digital planner, goodnotes planner, dated planner, weekly planner"),
+    ("planner-2027-blush", "2027-Planner_blush_LETTER_Sunday-start.pdf", "blush", 4585601645, "Printable Planners",
+     [("Blush Pink 2027 Planner", "Dated · hyperlinked · 98 pages", [0, 7, 10])],
+     DATED_DESC, "2027 planner, pink planner, digital planner, goodnotes planner, dated planner"),
+    ("planner-2027-neutral", "2027-Planner_neutral_LETTER_Sunday-start.pdf", "neutral", 4585601737, "Printable Planners",
+     [("Neutral 2027 Planner", "Dated · hyperlinked · 98 pages", [0, 2, 7])],
+     DATED_DESC, "2027 planner, neutral planner, minimalist planner, digital planner, dated planner"),
 ]
 
 
